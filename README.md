@@ -8,7 +8,7 @@ The repository root is the temporary sales page for:
 
 > City Play Co. presents St. Pete Detective Club — Case No. 001
 
-The site is intentionally static: one HTML file, local image/SVG assets, Google Fonts, a temporary Google Form checkout handoff, and lightweight event analytics.
+The site is intentionally static: HTML pages, local image/SVG assets, Google Fonts, a temporary Google Form checkout handoff, MailerLite email signup, and lightweight event analytics.
 
 ## Brand assets
 
@@ -38,30 +38,21 @@ In `index.html`, find `EVENT_CONFIG.registrationUrls` and replace the temporary 
 
 The three calls to action and analytics events already distinguish these tiers. If TicketSpice uses one event URL for all tiers, use that same URL for all three values.
 
-## Connect the mailing list
+## Mailing list
 
-Set `EVENT_CONFIG.mailingListEndpoint` to an HTTPS endpoint that accepts this JSON body:
+The homepage signup form is connected to MailerLite form `193256915046761884` for account `2516137`. The form keeps a direct MailerLite action as a no-JavaScript fallback and loads MailerLite’s webform script for the inline success state.
 
-```json
-{
-  "email": "player@example.com",
-  "source": "cityplayco.com"
-}
-```
-
-Until that value is configured, the form clearly tells visitors that email signup is being connected and directs them to `@cityplayco` on Instagram.
+MailerLite account actions—sending-domain verification, opt-in choice, welcome email, and a real subscriber test—are tracked in `OWNER-ACTIONS.md`.
 
 ## Deployment
 
-No deployment provider, workflow, custom-domain file, or auto-deploy configuration is included yet. The intended public domain is `cityplayco.com`.
+The public site deploys from the `main` branch. The canonical hostname is `https://cityplayco.com/`; plain HTTP and `www` redirect to it.
 
-When a provider is selected:
+After each release, verify the social card, ticket links, MailerLite form, Event structured data, `robots.txt`, and `sitemap.xml` in production.
 
-1. publish the repository root;
-2. attach `cityplayco.com` and `www.cityplayco.com`;
-3. choose one canonical hostname and redirect the other;
-4. verify the social card at `/assets/social-card.png`; and
-5. test every ticket tier and mailing-list submission in production.
+## Owner actions
+
+See `OWNER-ACTIONS.md` for the exact ticketing, consent, MailerLite, policy, Search Console, Cloudflare, and event-listing work that cannot be completed in source alone.
 
 ## Legal identity
 

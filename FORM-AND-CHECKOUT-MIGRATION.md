@@ -51,3 +51,5 @@ Before replacing the temporary checkout URLs:
 - complete one low-value or test-mode purchase/refund cycle if the platform permits.
 
 After validation, replace the three values in `EVENT_CONFIG.registrationUrls` and update the short checkout explanation below the ticket cards so it no longer mentions Google Form or Venmo.
+
+Also replace the three ticket anchors’ direct `href` values, update the JSON-LD `Offer.url` and availability values, and add completed-purchase tracking from the ticket platform. Keep `OWNER-ACTIONS.md` current until the cutover is complete.
