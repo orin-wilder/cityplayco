@@ -60,14 +60,12 @@ The supplied MailerLite form is connected in the site. In MailerLite:
 5. Subscribe with an email address you control from the production site. Confirm the success state, subscriber record, confirmation/welcome email, and unsubscribe flow.
 6. Delete any test subscriber after verification if it should not remain on the list.
 
-## 5. Verify search and answer-engine access
+## 5. Finish search-account setup
 
 1. In Google Search Console, verify the `cityplayco.com` domain property.
 2. Submit `https://cityplayco.com/sitemap.xml`.
 3. Inspect and request indexing for `https://cityplayco.com/`.
-4. Run the live URL through Google’s Rich Results Test and confirm the Event item has no errors.
-5. Cloudflare currently serves a managed `robots.txt`. After deployment, open `https://cityplayco.com/robots.txt` and confirm it includes the sitemap plus explicit allowances for `OAI-SearchBot` and `PerplexityBot`.
-6. Decide whether to allow `Google-Extended`. Keeping it blocked does not block normal Google Search, but it limits use for Gemini training and grounding.
+4. Decide whether to allow `Google-Extended` in Cloudflare’s crawler controls. Keeping it blocked does not block normal Google Search, but it limits use for Gemini training and grounding.
 
 ## 6. Publish matching event facts elsewhere
 
