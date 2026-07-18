@@ -76,7 +76,7 @@
             "priceCurrency": "USD",
             "validFrom": "2026-07-17T00:00:00-04:00",
             "availability": "https://schema.org/LimitedAvailability",
-            "url": "https://docs.google.com/forms/d/e/1FAIpQLSeR6TCaleFUuuZ1UZMZcOImDxgnlXK8B8NEalqbv9NuGJSsjg/viewform"
+            "url": "https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club"
           },
           {
             "@type": "Offer",
@@ -85,7 +85,7 @@
             "priceCurrency": "USD",
             "validFrom": "2026-07-17T00:00:00-04:00",
             "availability": "https://schema.org/InStock",
-            "url": "https://docs.google.com/forms/d/e/1FAIpQLSeR6TCaleFUuuZ1UZMZcOImDxgnlXK8B8NEalqbv9NuGJSsjg/viewform"
+            "url": "https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club"
           },
           {
             "@type": "Offer",
@@ -94,7 +94,7 @@
             "priceCurrency": "USD",
             "validFrom": "2026-07-17T00:00:00-04:00",
             "availability": "https://schema.org/InStock",
-            "url": "https://docs.google.com/forms/d/e/1FAIpQLSeR6TCaleFUuuZ1UZMZcOImDxgnlXK8B8NEalqbv9NuGJSsjg/viewform"
+            "url": "https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club"
           }
         ]
       },
@@ -378,8 +378,6 @@
     .ticket li::before { content: "◆"; position: absolute; left: 0; top: 2px; color: var(--gold); font-size: 10px; }
     .ticket .button { width: 100%; margin-top: auto; }
     .ticket-note { max-width: 800px; margin: 28px auto 0; color: #59645d; text-align: center; font-size: 15px; }
-    .purchase-status { display: none; max-width: 780px; margin: 24px auto 0; padding: 16px 20px; color: var(--forest); background: #e1d5bd; border-left: 4px solid var(--wine); font-size: 16px; text-align: left; }
-    .purchase-status.visible { display: block; }
     .ticket-policies { margin-top: 14px; text-align: center; font-size: 14px; }
     .ticket-policies a { color: var(--wine); text-underline-offset: 3px; }
 
@@ -582,7 +580,7 @@
               <li>Solo guests welcome</li>
               <li>Buy two for $58 while available</li>
             </ul>
-            <a class="button js-register" data-tier="early" data-price="29" href="https://docs.google.com/forms/d/e/1FAIpQLSeR6TCaleFUuuZ1UZMZcOImDxgnlXK8B8NEalqbv9NuGJSsjg/viewform">Get early ticket</a>
+            <a class="button js-register wx-button" data-tier="early" data-price="29" href="https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club" target="_blank" rel="noopener">Get early ticket</a>
           </article>
 
           <article class="ticket">
@@ -595,7 +593,7 @@
               <li>Thoughtful team placement</li>
               <li>No built-in plus-one needed</li>
             </ul>
-            <a class="button js-register" data-tier="solo" data-price="39" href="https://docs.google.com/forms/d/e/1FAIpQLSeR6TCaleFUuuZ1UZMZcOImDxgnlXK8B8NEalqbv9NuGJSsjg/viewform">Choose solo ticket</a>
+            <a class="button js-register wx-button" data-tier="solo" data-price="39" href="https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club" target="_blank" rel="noopener">Choose solo ticket</a>
           </article>
 
           <article class="ticket">
@@ -607,15 +605,12 @@
               <li>Two complete event tickets</li>
               <li>Your pair stays on one team</li>
             </ul>
-            <a class="button js-register" data-tier="pair" data-price="69" href="https://docs.google.com/forms/d/e/1FAIpQLSeR6TCaleFUuuZ1UZMZcOImDxgnlXK8B8NEalqbv9NuGJSsjg/viewform">Choose pair ticket</a>
+            <a class="button js-register wx-button" data-tier="pair" data-price="69" href="https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club" target="_blank" rel="noopener">Choose pair ticket</a>
           </article>
         </div>
 
-        <p class="ticket-note">Standard pricing begins after the first ten paid seats. For now, checkout uses a short registration form followed by Venmo. Submitting the form does not reserve a seat. Your ticket is confirmed only after payment is received and matched. Inventory is counted by paid seats, not form submissions.</p>
+        <p class="ticket-note">Standard pricing begins after the first ten paid seats. Secure checkout is handled by TicketSpice. Your seat is confirmed when TicketSpice completes your payment and sends your order confirmation. Inventory is counted by paid attendees.</p>
         <p class="ticket-policies"><a href="event-terms.html">Event terms & policies</a> · <a href="privacy.html">Privacy</a></p>
-        <div class="purchase-status" id="purchase-status" role="status" aria-live="polite">
-          Ticket checkout is being connected. For help, email <a href="mailto:ryan@communityplaytools.com?subject=St.%20Pete%20Detective%20Club%20ticket">ryan@communityplaytools.com</a> with “Case No. 001” in the subject.
-        </div>
       </div>
     </section>
 
@@ -774,11 +769,6 @@
   </script>
   <script>
     const EVENT_CONFIG = {
-      registrationUrls: {
-        early: "https://docs.google.com/forms/d/e/1FAIpQLSeR6TCaleFUuuZ1UZMZcOImDxgnlXK8B8NEalqbv9NuGJSsjg/viewform?usp=publish-editor",
-        solo: "https://docs.google.com/forms/d/e/1FAIpQLSeR6TCaleFUuuZ1UZMZcOImDxgnlXK8B8NEalqbv9NuGJSsjg/viewform?usp=publish-editor",
-        pair: "https://docs.google.com/forms/d/e/1FAIpQLSeR6TCaleFUuuZ1UZMZcOImDxgnlXK8B8NEalqbv9NuGJSsjg/viewform?usp=publish-editor"
-      },
       supabaseUrl: "https://nzcogxjcihgtevjiuipf.supabase.co",
       supabaseKey: "sb_publishable_QSItD0zcm6RsrKFsFTTRfw_RKNghv2p"
     };
@@ -815,23 +805,10 @@
     }
 
     document.querySelectorAll(".js-register").forEach((link) => {
-      link.addEventListener("click", (event) => {
+      link.addEventListener("click", () => {
         const tier = link.dataset.tier || "unknown";
         const price = Number(link.dataset.price) || null;
-        const registrationUrl = EVENT_CONFIG.registrationUrls[tier] || "";
         track(`spdc_ticket_${tier}`, price);
-
-        if (!registrationUrl) {
-          if (link.getAttribute("href") === "#tickets") return;
-          event.preventDefault();
-          const message = document.querySelector("#purchase-status");
-          message.classList.add("visible");
-          message.scrollIntoView({ behavior: "smooth", block: "center" });
-          return;
-        }
-
-        event.preventDefault();
-        location.href = registrationUrl;
       });
     });
 

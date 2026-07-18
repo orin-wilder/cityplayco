@@ -8,7 +8,7 @@ The repository root is the temporary sales page for:
 
 > City Play Co. presents St. Pete Detective Club — Case No. 001
 
-The site is intentionally static: HTML pages, local image/SVG assets, Google Fonts, a temporary Google Form checkout handoff, MailerLite email signup, and lightweight event analytics.
+The site is intentionally static: HTML pages, local image/SVG assets, Google Fonts, a TicketSpice checkout handoff, MailerLite email signup, and lightweight event analytics.
 
 ## Brand assets
 
@@ -28,15 +28,11 @@ Serve the repository over HTTP, then open the local address in a browser:
 python -m http.server 8000
 ```
 
-## Connect TicketSpice
+## TicketSpice checkout
 
-In `index.html`, find `EVENT_CONFIG.registrationUrls` and replace the temporary Google Form URL for each ticket tier:
+The Early, Solo, and Pair ticket buttons open the hosted TicketSpice event page at `https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club`. The same destination is used in the page’s Event structured data.
 
-- `early`: first ten seats at $29;
-- `solo`: one standard seat at $39; and
-- `pair`: two standard seats at $69.
-
-The three calls to action and analytics events already distinguish these tiers. If TicketSpice uses one event URL for all tiers, use that same URL for all three values.
+Each button keeps its ticket-tier and price attributes for outbound-click analytics. If the hosted event URL changes, update all three ticket anchors and the three JSON-LD `Offer.url` values together.
 
 ## Mailing list
 
