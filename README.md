@@ -30,7 +30,7 @@ python -m http.server 8000
 
 ## TicketSpice checkout
 
-The Early, Solo, and Pair ticket buttons open the hosted TicketSpice event page at `https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club`. The same destination is used in the page’s Event structured data.
+The Early, General, and Pair ticket buttons open the hosted TicketSpice event page at `https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club`. The same destination is used in the page’s Event structured data.
 
 Each button keeps its ticket-tier and price attributes for outbound-click analytics. If the hosted event URL changes, update all three ticket anchors and the three JSON-LD `Offer.url` values together.
 

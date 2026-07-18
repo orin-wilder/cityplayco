@@ -6,14 +6,14 @@ The public website now sends every ticket button to TicketSpice. The items below
 
 1. Confirm the product and inventory rules:
    - Early Ticket — $29 per person, limited to the first 10 paid seats;
-   - Solo Ticket — $39, one attendee and one inventory seat;
+   - General Ticket — $39, one attendee and one inventory seat;
    - Pair Ticket — $69, two attendees and two inventory seats; and
    - total event capacity — 25 paid attendees across every ticket type.
 2. Hide or delay the Pair Ticket while two $29 Early Tickets remain the less expensive option.
 3. Align the TicketSpice public copy with the website before sharing widely:
    - change `City Play Co presents` to `City Play Co. presents`;
    - choose one canonical case title—the website currently says `The Sea-Vamp Syndicate`, while TicketSpice says `The Case of the Sea Vamp Forgery - A Detective Case`—and use it everywhere;
-   - rename `General Admission` to `Solo Ticket`;
+   - rename `General Admission` to `General Ticket`;
    - rename `2 Pack` to `Pair Ticket`; and
    - replace `July 31st, 7-10pm. Arrive by 8pm` with `Optional pre-game hangout from 7 PM. Briefing and game begin at 8 PM. Reveal around 10 PM.`
 4. Collect both attendee names and emails for Pair Tickets, plus optional accessibility and team-placement details.
