@@ -1,55 +1,52 @@
 # City Play Co.
 
-Launch site for **City Play Co.** and the first St. Pete Detective Club event.
+Static waitlist site for St. Pete Detective Club, planned for early October in Downtown St. Pete. Date, venue, ticketing, and group arrangements are not finalized.
 
-## Current launch
+## Preview
 
-The repository root is the temporary sales page for:
+From the parent workspace: `python -m http.server 8000 --directory cityplayco`, then open http://localhost:8000. Use HTTP rather than file URLs so the YouTube embed receives a referrer.
 
-> City Play Co. presents St. Pete Detective Club — Case No. 001
+## Waitlist
 
-The site is intentionally static: HTML pages, local image/SVG assets, Google Fonts, a TicketSpice checkout handoff, MailerLite email signup, and lightweight event analytics.
+The single MailerLite form sits in the hero. All waitlist links lead to it. Instagram appears beneath signup, in the success message, and in the footer. The mobile sticky button hides while signup is visible.
 
-## Brand assets
+MailerLite account `2516137`, form `193256915046761884`, embed `43858234`. The success callback means form acceptance, not completed double opt-in. Verify double opt-in in MailerLite and complete a real signup/confirmation test with an authorized test address before publishing. No account settings were modified.
 
-- `assets/city-play-co-mark.svg` — primary square vector mark;
-- `assets/city-play-co-wordmark.svg` — horizontal website wordmark;
-- `assets/city-play-co-profile.png` — 1080 × 1080 Instagram/profile export;
-- `assets/social-card.svg` — editable event-sharing artwork; and
-- `assets/social-card.png` — 1200 × 630 sharing export used by page metadata.
+## Analytics
 
-The mark is intentionally flat and geometric so it remains recognizable at small sizes: a city skyline, a magnifying glass, and a red game pawn.
+Project: [cityplayco-case001-prod](https://supabase.com/dashboard/project/fqgnfjmhxwtvxzvfjqhh).
 
-## Preview locally
+Open **Table Editor → cityplayco_site_events**. The browser has insert-only access; use the signed-in dashboard for reports. Local previews do not send production analytics.
 
-Serve the repository over HTTP, then open the local address in a browser:
+| Event | Meaning |
+| --- | --- |
+| `cityplayco_page_view` | Page load, including reloads |
+| `cityplayco_mailing_list_cta_click` | Jump-to-signup click |
+| `cityplayco_mailing_list_intent` | Form submission attempt |
+| `cityplayco_mailing_list_success` | MailerLite success callback, not email confirmation |
+| `cityplayco_instagram_click` | Outbound click, not a verified follow |
 
-```powershell
-python -m http.server 8000
+The placement column distinguishes header, hero, closing, mobile, footer, and signup_success. Records include a temporary per-tab session identifier, allowlisted UTM parameters, and referrer origin. No email address is sent to analytics. Tracking failures warn in the browser console without interrupting signup.
+
+In **SQL Editor**, run:
+
+```sql
+select event, placement, count(*) as events,
+       count(distinct session_id) as browser_sessions
+from public.cityplayco_site_events
+where created_at >= now() - interval '30 days'
+group by event, placement
+order by event, placement;
 ```
 
-## TicketSpice checkout
+Sessions are not unique people. Direct form submissions need not include a CTA click. Confirmed subscriptions in MailerLite are the primary outcome.
 
-The Early, General, and Pair ticket buttons open the hosted TicketSpice event page at `https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club`. The same destination is used in the page’s Event structured data.
+Migration: `../cityplayco_case001/webapp/supabase/migrations/202609100001_cityplayco_site_analytics.sql`, applied September 10, 2026. No gameplay tables changed. Historical records are in `cityplayco_legacy_events`; see MIGRATION-NOTES.md.
 
-Each button keeps its ticket-tier and price attributes for outbound-click analytics. If the hosted event URL changes, update all three ticket anchors and the three JSON-LD `Offer.url` values together.
+## Publishing
 
-## Mailing list
+Website edits remain local. Before deployment, verify MailerLite double opt-in, the teaser, social preview, and mobile signup. After deployment, verify page views and CTA clicks in the new table. The live page keeps its old configuration until deployed.
 
-The homepage signup form is connected to MailerLite form `193256915046761884` for account `2516137`. The form keeps a direct MailerLite action as a no-JavaScript fallback and loads MailerLite’s webform script for the inline success state.
+The old event-terms page is retained but unlinked from the homepage and privacy page. Replace its July details before linking it again when registration opens.
 
-MailerLite account actions—sending-domain verification, opt-in choice, welcome email, and a real subscriber test—are tracked in `OWNER-ACTIONS.md`.
-
-## Deployment
-
-The public site deploys from the `main` branch. The canonical hostname is `https://cityplayco.com/`; plain HTTP and `www` redirect to it.
-
-After each release, verify the social card, ticket links, MailerLite form, Event structured data, `robots.txt`, and `sitemap.xml` in production.
-
-## Owner actions
-
-See `OWNER-ACTIONS.md` for the exact ticketing, consent, MailerLite, policy, Search Console, Cloudflare, and event-listing work that cannot be completed in source alone.
-
-## Legal identity
-
-City Play Co. is the public brand. The legal operator is **Community Play Tools, LLC**.
+City Play Co. is a brand of Community Play Tools, LLC.

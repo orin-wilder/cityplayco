@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>St. Pete Detective Club | City Play Co.</title>
-  <meta name="description" content="Play detective downtown with City Play Co. Join a hosted, on-foot mystery game through downtown St. Pete on July 31, 2026.">
+  <title>Play Detective Downtown | City Play Co.</title>
+  <meta name="description" content="Play detective downtown. A new outdoor walking mystery is planned for Downtown St. Pete's Central Waterfront District in early October.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#102c25">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="St. Pete Detective Club — Play Detective Downtown">
-  <meta property="og:description" content="A hosted, on-foot mystery game through downtown St. Pete. Come solo or bring your crew.">
+  <meta property="og:title" content="Play Detective Downtown | City Play Co.">
+  <meta property="og:description" content="A new outdoor walking mystery is planned for Downtown St. Pete's Central Waterfront District in early October.">
   <meta property="og:image" content="https://cityplayco.com/assets/social-card.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="City Play Co. presents St. Pete Detective Club — Case No. 001">
   <meta property="og:url" content="https://cityplayco.com/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="St. Pete Detective Club — Play Detective Downtown">
-  <meta name="twitter:description" content="A hosted, on-foot mystery game through downtown St. Pete.">
+  <meta name="twitter:title" content="Play Detective Downtown | City Play Co.">
+  <meta name="twitter:description" content="A new outdoor walking mystery is planned for Downtown St. Pete's Central Waterfront District in early October.">
   <meta name="twitter:image" content="https://cityplayco.com/assets/social-card.png">
   <link rel="canonical" href="https://cityplayco.com/">
   <link rel="icon" href="assets/city-play-co-mark.svg" type="image/svg+xml">
@@ -37,37 +37,6 @@
         "url": "https://cityplayco.com/",
         "logo": "https://cityplayco.com/assets/city-play-co-profile.png",
         "sameAs": ["https://www.instagram.com/cityplayco/"]
-      },
-      {
-        "@type": "Event",
-        "@id": "https://cityplayco.com/#event",
-        "name": "St. Pete Detective Club: Case No. 001",
-        "description": "A live, hosted detective game for adults in downtown St. Pete. Small teams follow clues, examine evidence, solve a fictional case, and return for the reveal.",
-        "startDate": "2026-07-31T20:00:00-04:00",
-        "endDate": "2026-07-31T22:00:00-04:00",
-        "doorTime": "2026-07-31T19:00:00-04:00",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "url": "https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club",
-        "image": ["https://cityplayco.com/assets/social-card.png"],
-        "typicalAgeRange": "21+",
-        "location": {
-          "@type": "Place",
-          "name": "Downtown St. Petersburg",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "St. Petersburg",
-            "addressRegion": "FL",
-            "addressCountry": "US"
-          }
-        },
-        "organizer": {"@id": "https://cityplayco.com/#organization"},
-        "offers": {
-          "@type": "Offer",
-          "url": "https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/LimitedAvailability"
-        }
       }
     ]
   }
@@ -445,6 +414,21 @@
       .mobile-cta .button { width: 100%; min-height: 47px; }
     }
 
+    .hero-signup { margin-top: 22px; scroll-margin-top: 24px; }
+    .waitlist-promise { color: #e2dccd; margin: 16px 0 0; font-size: 18px; }
+    .hero-signup .signup { grid-template-columns: 1fr; }
+    .hero-signup .signup .button { width: 100%; cursor: pointer; }
+    .instagram-link { font-size: 15px; margin: 22px 0 0; color: var(--gold-light); }
+    .instagram-link a { text-underline-offset: 4px; }
+    .join-success .instagram-link { color: var(--gold-light); }
+    .mobile-cta.is-hidden { display: none; }
+    @media (max-width: 620px) {
+      .masthead { gap: 12px; }
+      .wordmark { width: min(185px, 46vw); }
+      .header-cta { letter-spacing: .03em; padding-inline: 9px; }
+      .hero-grid { padding-top: 14px; }
+      .hero-copy { padding-top: 20px; }
+    }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       *, *::before, *::after { transition-duration: .01ms !important; }
@@ -457,20 +441,39 @@
 
   <header class="wrap masthead">
     <img class="wordmark" src="assets/city-play-co-wordmark.svg" width="1000" height="240" alt="City Play Co. — Game night in your city">
-    <a class="button header-cta js-register" href="https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club">Get tickets</a>
+    <a class="button header-cta js-join" data-placement="header" href="#join">Join the waitlist</a>
   </header>
 
   <main id="main-content">
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">St. Pete Detective Club · Case 001</p>
+          <p class="eyebrow">St. Pete Detective Club</p>
           <h1>Play detective downtown.</h1>
-          <p class="dek">A hosted, on-foot mystery game through downtown St. Pete. Follow clues, crack the case, and meet your crew along the way.</p>
-          <div class="hero-actions">
-            <a class="button js-register" href="https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club">Get tickets for July 31</a>
+          <p class="dek">Follow clues and uncover a mystery on foot through Downtown St. Pete’s Central Waterfront District.</p>
+          <p class="micro">Planned for early October · Downtown St. Pete</p>
+          <p class="waitlist-promise">Get the date, launch details, and an invitation to book when registration opens.</p>
+        <div id="join" class="hero-signup">
+        <div id="mlb2-43858234" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-43858234">
+          <div class="row-form">
+            <form class="signup ml-block-form" action="https://assets.mailerlite.com/jsonp/2516137/forms/193256915046761884/subscribe" method="post" target="_blank">
+              <label for="signup-email">Email address</label>
+              <input id="signup-email" name="fields[email]" type="email" autocomplete="email" placeholder="you@example.com" required>
+              <input type="hidden" name="ml-submit" value="1">
+              <input type="hidden" name="anticsrf" value="true">
+              <button class="button primary" type="submit">Join the waitlist</button>
+              <button class="button loading" type="button" disabled aria-label="Joining the list"><span class="ml-form-embedSubmitLoad" aria-hidden="true"></span></button>
+            </form>
+            <p class="signup-note">By joining, you agree to receive City Play Co. emails. Unsubscribe anytime. <a href="privacy.html">Privacy details</a>.</p>
           </div>
-          <p class="micro">Friday, July 31 · 21+ · Solo players welcome · Downtown St. Pete</p>
+          <div class="row-success join-success" style="display: none" role="status" aria-live="polite">
+            <h2>One more step: confirm your email.</h2>
+            <p>Check your inbox for an email from City Play Co. and click the confirmation link to finish joining the waitlist. Don’t see it? Check spam or Promotions.</p>
+            <p class="instagram-link"><a class="js-instagram" data-placement="signup_success" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">Follow @cityplayco for sneak peeks and clues →</a></p>
+          </div>
+        </div>
+        </div>
+          <p class="instagram-link signup-instagram"><a class="js-instagram" data-placement="hero" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">Follow @cityplayco for sneak peeks and clues →</a></p>
         </div>
 
         <figure class="teaser-video">
@@ -483,7 +486,7 @@
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen></iframe>
           </div>
-          <figcaption>Case No. 001 · Teaser</figcaption>
+          <figcaption>New case · Teaser</figcaption>
         </figure>
       </div>
     </section>
@@ -492,72 +495,46 @@
       <div class="wrap confidence-grid">
         <div class="confidence-item">
           <span class="confidence-number">01</span>
-          <strong>Come solo or together</strong>
-          <span>We make joining a crew easy.</span>
+          <strong>A story in the city</strong>
+          <span>Follow a trail of clues through a new downtown mystery.</span>
         </div>
         <div class="confidence-item">
           <span class="confidence-number">02</span>
-          <strong>Hosted teams of 3–6</strong>
-          <span>We handle the introductions and setup.</span>
+          <strong>On foot, outdoors</strong>
+          <span>Walk the Central Waterfront District as the story unfolds.</span>
         </div>
         <div class="confidence-item">
           <span class="confidence-number">03</span>
-          <strong>Downtown is the game board</strong>
-          <span>Follow the trail on foot through St. Pete.</span>
+          <strong>Be first to hear</strong>
+          <span>Join the waitlist for the date and registration announcement.</span>
         </div>
       </div>
     </section>
 
     <section class="closing">
       <div class="wrap">
-        <h2>The case is open.<br>Your crew is waiting.</h2>
-        <p>All event details, current availability, and secure checkout are on TicketSpice.</p>
-        <a class="button js-register" href="https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club">Open the case & get tickets</a>
+        <h2>Your next mystery starts here.</h2>
+        <p>Join the waitlist for launch details and an invitation to book when registration opens.</p>
+        <a class="button js-join" data-placement="closing" href="#join">Join the waitlist</a>
       </div>
     </section>
 
-    <section class="community" id="join">
-      <div class="wrap community-grid">
-        <div>
-          <p class="section-label">Can’t make this case?</p>
-          <h2>Get invited to the next one.</h2>
-          <p class="community-copy">New games, first ticket access, and the occasional clue. No clutter.</p>
-        </div>
-        <div id="mlb2-43858234" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-43858234">
-          <div class="row-form">
-            <form class="signup ml-block-form" action="https://assets.mailerlite.com/jsonp/2516137/forms/193256915046761884/subscribe" method="post" target="_blank">
-              <label for="signup-email">Email address</label>
-              <input id="signup-email" name="fields[email]" type="email" autocomplete="email" placeholder="you@example.com" required>
-              <input type="hidden" name="ml-submit" value="1">
-              <input type="hidden" name="anticsrf" value="true">
-              <button class="button primary" type="submit">Join the list</button>
-              <button class="button loading" type="button" disabled aria-label="Joining the list"><span class="ml-form-embedSubmitLoad" aria-hidden="true"></span></button>
-            </form>
-            <p class="signup-note">By joining, you agree to receive City Play Co. emails. Unsubscribe anytime. <a href="privacy.html">Privacy details</a>.</p>
-          </div>
-          <div class="row-success join-success" style="display: none" role="status" aria-live="polite">
-            <h2>You’re in the club.</h2>
-            <p>Watch your inbox for the next case.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+
   </main>
 
   <footer>
     <div class="wrap footer-inner">
       <span>© 2026 City Play Co. · A brand of Community Play Tools, LLC</span>
       <div class="footer-links">
-        <a href="event-terms.html">Event terms</a>
         <a href="privacy.html">Privacy</a>
-        <a href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">@cityplayco</a>
+        <a class="js-instagram" data-placement="footer" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">@cityplayco</a>
         <a href="mailto:ryan@communityplaytools.com">Contact</a>
       </div>
     </div>
   </footer>
 
   <div class="mobile-cta">
-    <a class="button js-register" href="https://cityplayco.ticketspice.com/city-play-co-presents-st-pete-detective-club">Get tickets for July 31</a>
+    <a class="button js-join" data-placement="mobile" href="#join">Join the waitlist</a>
   </div>
 
   <script>
@@ -566,6 +543,8 @@
       if (!container) return;
       container.querySelector(".row-form").style.display = "none";
       container.querySelector(".row-success").style.display = "block";
+      document.querySelector(".signup-instagram").hidden = true;
+      track("cityplayco_mailing_list_success", "hero");
     }
   </script>
   <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
@@ -574,46 +553,61 @@
   </script>
   <script>
     const EVENT_CONFIG = {
-      supabaseUrl: "https://nzcogxjcihgtevjiuipf.supabase.co",
-      supabaseKey: "sb_publishable_QSItD0zcm6RsrKFsFTTRfw_RKNghv2p"
+      supabaseUrl: "https://fqgnfjmhxwtvxzvfjqhh.supabase.co",
+      supabaseKey: "sb_publishable_wx7Dccru1aSwFjz3TQO95Q_tNWC3-iW"
     };
 
     const sessionId = (() => {
-      const key = "spdc_session";
-      let value = sessionStorage.getItem(key);
-      if (!value) {
-        value = (crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random()}`);
+      const createId = () => globalThis.crypto?.randomUUID?.() || `${Date.now()}-${Math.random()}`;
+      try {
+        const key = "cityplayco_session";
+        const value = sessionStorage.getItem(key) || createId();
         sessionStorage.setItem(key, value);
-      }
-      return value;
+        return value;
+      } catch { return createId(); }
     })();
 
-    function track(event) {
-      fetch(`${EVENT_CONFIG.supabaseUrl}/rest/v1/speakeasy_events`, {
+    function track(event, placement = null) {
+      // Local previews must not inflate the production funnel.
+      if (!["cityplayco.com", "www.cityplayco.com"].includes(location.hostname)) return;
+      const campaign = new URLSearchParams();
+      const params = new URLSearchParams(location.search);
+      ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"].forEach((key) => {
+        if (params.has(key)) campaign.set(key, params.get(key).slice(0, 200));
+      });
+      let referrer = null;
+      try { referrer = document.referrer ? new URL(document.referrer).origin : null; } catch {}
+      fetch(`${EVENT_CONFIG.supabaseUrl}/rest/v1/cityplayco_site_events`, {
         method: "POST",
         keepalive: true,
         headers: {
           apikey: EVENT_CONFIG.supabaseKey,
-          Authorization: `Bearer ${EVENT_CONFIG.supabaseKey}`,
           "Content-Type": "application/json",
           Prefer: "return=minimal"
         },
-        body: JSON.stringify({
-          event,
-          price: null,
-          utm: location.search || "(none)",
-          session_id: sessionId,
-          referrer: document.referrer || null
-        })
-      }).catch(() => {});
+        body: JSON.stringify({ event, placement, utm: campaign.toString() || "(none)", session_id: sessionId, referrer })
+      }).then((response) => {
+        if (!response.ok) console.warn("City Play Co. analytics request failed:", response.status);
+      }).catch(() => console.warn("City Play Co. analytics request could not be sent."));
     }
 
-    document.querySelectorAll(".js-register").forEach((link) => {
-      link.addEventListener("click", () => track("cityplayco_ticketspice_click"));
+    document.querySelectorAll(".js-join").forEach((link) => {
+      link.addEventListener("click", () => {
+        track("cityplayco_mailing_list_cta_click", link.dataset.placement);
+        const email = document.querySelector("#signup-email");
+        if (email && email.getClientRects().length) email.focus({ preventScroll: true });
+      });
+    });
+    document.querySelectorAll(".js-instagram").forEach((link) => {
+      link.addEventListener("click", () => track("cityplayco_instagram_click", link.dataset.placement));
     });
     document.querySelector(".ml-block-form")?.addEventListener("submit", () => {
-      track("cityplayco_mailing_list_intent");
+      track("cityplayco_mailing_list_intent", "hero");
     });
+    const signupObserver = new IntersectionObserver(([entry]) => {
+      document.querySelector(".mobile-cta").classList.toggle("is-hidden", entry.isIntersecting);
+    });
+    signupObserver.observe(document.querySelector("#join"));
     track("cityplayco_page_view");
   </script>
 </body>
