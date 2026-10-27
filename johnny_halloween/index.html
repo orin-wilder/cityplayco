@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Banishment of Johnny Prime | City Play Co.</title>
+  <meta name="description" content="A one-night Halloween party game built by City Play Co. Saturday, October 31, 2026, 6:30 PM to midnight, with the game finale at 11:11 PM.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#1a0d1c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Banishment of Johnny Prime | City Play Co.">
+  <meta property="og:description" content="A one-night Halloween party game built by City Play Co. Saturday, Oct 31, 6:30 PM to midnight. Game finale at 11:11 PM.">
+  <meta property="og:image" content="https://cityplayco.com/johnny_halloween/img/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Banishment of Johnny Prime, a Halloween party game by City Play Co.">
+  <meta property="og:url" content="https://cityplayco.com/johnny_halloween/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Banishment of Johnny Prime | City Play Co.">
+  <meta name="twitter:description" content="A one-night Halloween party game built by City Play Co. Saturday, Oct 31, 6:30 PM to midnight. Game finale at 11:11 PM.">
+  <meta name="twitter:image" content="https://cityplayco.com/johnny_halloween/img/social-card.jpg">
+  <link rel="canonical" href="https://cityplayco.com/johnny_halloween/">
+  <link rel="icon" href="/assets/city-play-co-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/city-play-co-profile.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Creepster&family=Lilita+One&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "The Banishment of Johnny Prime: a Halloween party game",
+    "description": "A one-night Halloween party game built by City Play Co., played on your phone, with a summoning finale at 11:11 PM.",
+    "startDate": "2026-10-31T18:30:00-04:00",
+    "endDate": "2026-11-01T00:00:00-04:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": { "@type": "Place", "name": "The Home of Get Psyched", "address": { "@type": "PostalAddress", "addressLocality": "St. Petersburg", "addressRegion": "FL", "addressCountry": "US" } },
+    "image": ["https://cityplayco.com/johnny_halloween/img/social-card.jpg"],
+    "organizer": { "@type": "Organization", "name": "City Play Co.", "url": "https://cityplayco.com/" },
+    "url": "https://cityplayco.com/johnny_halloween/"
+  }
+  </script>
+  <style>
+    :root {
+      --base: #1a0d1c; --card: #2a1530; --raised: #3a1f43; --sunken: #12081a;
+      --ink: #0a040b; --text: #fbefd9; --muted: #cbb6d8; --line: #4a2d52;
+      --violet: #a46cf5; --violet-text: #c4a0ff; --orange: #ff8a1f; --gold: #f6c453; --teal: #7fd6c0;
+      --paper: #f3eddf; --forest: #17372f;
+      --rainbow: linear-gradient(90deg, #ff5a5f, #ff9f1c, #ffd23f, #4ade80, #3fa7ff, #b47cff);
+      --display: "Lilita One", "Arial Black", system-ui, sans-serif;
+      --body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --shout: Creepster, "Lilita One", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--base); color: var(--text); font: 400 18px/1.55 var(--body); }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .wrap { width: min(1120px, calc(100% - 32px)); margin-inline: auto; }
+    .skip { position: fixed; top: 10px; left: 10px; z-index: 50; padding: 10px 14px; background: var(--paper); color: var(--forest); font-weight: 700; transform: translateY(-200%); }
+    .skip:focus { transform: none; }
+
+    /* City Play Co. strip ties the page to the brand */
+    .brandbar { background: var(--paper); color: var(--forest); border-bottom: 4px solid var(--ink); }
+    .brandbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 0; }
+    .brandbar img { width: min(230px, 52vw); }
+    .brandbar a.back { font: 700 14px/1.2 var(--body); text-underline-offset: 3px; }
+
+    .stars { position: absolute; inset: 0; pointer-events: none; opacity: .55;
+      background-image: radial-gradient(2px 2px at 8% 18%, var(--gold) 50%, transparent 51%), radial-gradient(2px 2px at 82% 12%, var(--text) 50%, transparent 51%),
+        radial-gradient(3px 3px at 64% 78%, var(--violet-text) 50%, transparent 51%), radial-gradient(2px 2px at 22% 88%, var(--gold) 50%, transparent 51%),
+        radial-gradient(2px 2px at 94% 56%, var(--text) 50%, transparent 51%), radial-gradient(3px 3px at 46% 8%, var(--violet-text) 50%, transparent 51%); }
+
+    /* Hero */
+    .hero { position: relative; overflow: hidden; padding: 56px 0 64px;
+      background: radial-gradient(55% 60% at 20% 0%, rgba(164,108,245,.45), transparent 70%), radial-gradient(45% 50% at 90% 100%, rgba(255,138,31,.25), transparent 70%), var(--base); }
+    .hero-grid { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center; }
+    .kicker { margin: 0; font: 400 clamp(26px, 3.4vw, 38px)/1.05 var(--shout); color: var(--orange); letter-spacing: .03em; }
+    h1 { margin: 2px 0 0; font: 400 clamp(54px, 9vw, 104px)/.95 var(--display); letter-spacing: .01em; }
+    .rainbow { background: var(--rainbow); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 5px 0 var(--ink)); }
+    .dek { margin: 18px 0 0; max-width: 560px; font-size: clamp(19px, 2vw, 22px); color: var(--text); }
+    .hero-art { position: relative; justify-self: center; width: min(400px, 80vw); }
+    .hero-art .prime { width: 100%; transform: rotate(5deg); filter: drop-shadow(0 8px 0 var(--ink)); }
+    .hero-art .witch { position: absolute; width: 44%; left: -16%; bottom: -8%; transform: rotate(-9deg); filter: drop-shadow(0 6px 0 var(--ink)); }
+
+    /* Event card */
+    .event { margin-top: 30px; max-width: 560px; padding: 20px 22px 22px; border-radius: 24px; background: var(--card);
+      border: 4px solid var(--ink); box-shadow: 0 7px 0 var(--ink), 0 0 0 3px var(--gold); }
+    .event .tag { display: inline-block; padding: 4px 12px; border-radius: 999px; background: var(--gold); color: var(--ink); font: 700 13px/1.4 var(--body); letter-spacing: .08em; text-transform: uppercase; }
+    .event dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin: 14px 0 0; }
+    .event dt { font: 700 13px/1.6 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+    .event dd { margin: 0; font: 400 20px/1.35 var(--display); letter-spacing: .01em; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 22px; border-radius: 14px;
+      border: 3px solid var(--ink); box-shadow: 0 5px 0 var(--ink); font: 400 19px/1 var(--display); letter-spacing: .02em; text-decoration: none; transition: transform .1s, box-shadow .1s; }
+    .btn:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--ink); }
+    .btn-primary { background: var(--orange); color: var(--ink); }
+    .btn-quiet { background: var(--raised); color: var(--text); border-color: var(--line); box-shadow: 0 4px 0 var(--ink); }
+    .btn svg { width: 22px; height: 22px; flex: none; }
+    .fine { margin: 12px 0 0; color: var(--muted); font-size: 15px; }
+
+    /* Sections */
+    section { position: relative; }
+    .band { padding: 64px 0; border-top: 4px solid var(--ink); }
+    .band--card { background: var(--card); }
+    .label { margin: 0 0 6px; font: 700 13px/1.3 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+    h2 { margin: 0; font: 400 clamp(34px, 5vw, 52px)/1.02 var(--display); letter-spacing: .01em; }
+    .lede { margin: 12px 0 0; max-width: 680px; color: var(--muted); font-size: 19px; }
+
+    /* Videos */
+    .videos { display: grid; grid-template-columns: repeat(2, minmax(0, 300px)); gap: 28px; justify-content: center; margin-top: 30px; }
+    .video figcaption { margin-top: 12px; text-align: center; font: 400 20px/1.2 var(--display); }
+    .video small { display: block; margin-top: 2px; font: 400 14px/1.4 var(--body); color: var(--muted); }
+    .frame { position: relative; aspect-ratio: 9 / 16; border-radius: 22px; overflow: hidden; background: var(--sunken);
+      border: 4px solid var(--ink); box-shadow: 0 7px 0 var(--ink), 0 0 0 3px var(--violet); }
+    .frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+    /* Feature grid */
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 34px; }
+    .feature { display: flex; flex-direction: column; gap: 12px; }
+    .shot { border-radius: 24px; overflow: hidden; border: 4px solid var(--ink); box-shadow: 0 7px 0 var(--ink); background: var(--sunken); }
+    .shot--phone { aspect-ratio: 720 / 1000; }
+    .shot--phone img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .feature h3 { margin: 6px 0 0; font: 400 25px/1.1 var(--display); }
+    .feature p { margin: 0; color: var(--muted); font-size: 17px; }
+    .wide { display: grid; grid-template-columns: 1.5fr 1fr; gap: 30px; align-items: center; margin-top: 40px; }
+    .wide .shot { aspect-ratio: auto; }
+    .bars { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
+    .bars .shot { border-radius: 18px; }
+
+    /* Built by */
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 30px; }
+    .stat { padding: 18px; border-radius: 20px; background: var(--raised); border: 3px solid var(--ink); box-shadow: 0 5px 0 var(--ink); text-align: center; }
+    .stat b { display: block; font: 400 44px/1 var(--display); }
+    .stat span { display: block; margin-top: 6px; color: var(--muted); font-size: 15px; }
+    .photos-soon { margin-top: 34px; padding: 22px; border-radius: 22px; border: 3px dashed var(--violet-text); text-align: center; color: var(--muted); }
+    .photos-soon b { display: block; color: var(--text); font: 400 26px/1.2 var(--display); }
+
+    /* Closing */
+    .closing { padding: 70px 0 80px; text-align: center; border-top: 4px solid var(--ink);
+      background: radial-gradient(60% 70% at 50% 0%, rgba(164,108,245,.4), transparent 70%), var(--base); }
+    .closing img { width: 170px; margin: 0 auto 8px; filter: drop-shadow(0 6px 0 var(--ink)); }
+    .closing .actions { justify-content: center; }
+    footer { padding: 26px 0 40px; background: var(--sunken); color: var(--muted); font-size: 14px; border-top: 4px solid var(--ink); }
+    footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; }
+    footer a { color: var(--gold); }
+
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-art { order: -1; width: min(300px, 70vw); margin-bottom: 4px; }
+      .features { grid-template-columns: repeat(2, 1fr); }
+      .wide, .bars { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      body { font-size: 17px; }
+      .hero { padding: 34px 0 46px; }
+      .event dl { grid-template-columns: 1fr; gap: 0; }
+      .event dd { margin-bottom: 8px; }
+      .actions .btn { width: 100%; }
+      .videos { grid-template-columns: minmax(0, 300px); }
+      .features { grid-template-columns: 1fr; }
+      .band { padding: 48px 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <div class="brandbar">
+    <div class="wrap">
+      <a href="/" aria-label="City Play Co. home"><img src="/assets/city-play-co-wordmark.svg" width="1000" height="240" alt="City Play Co."></a>
+      <a class="back" href="/">More City Play Co. games</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="kicker">The Banishment of</p>
+          <h1><span class="rainbow">Johnny Prime</span></h1>
+          <p class="dek">A one-night Halloween party game, built by City Play Co. The Whytry Cult banished Johnny Prime into the Cheddar Void. Grab your phone, light up the rainbow and help bring him back.</p>
+
+          <div class="event" aria-label="Event details">
+            <span class="tag">Come join us</span>
+            <dl>
+              <dt>When</dt><dd>Halloween, Saturday, October 31, 2026</dd>
+              <dt>Time</dt><dd>6:30 PM to midnight</dd>
+              <dt>Finale</dt><dd>The summoning at 11:11 PM</dd>
+              <dt>Where</dt><dd>The Home of Get Psyched, St. Pete</dd>
+            </dl>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+                DM @cityplayco for the address
+              </a>
+            </div>
+            <p class="fine">Bring a charged phone. The game runs in your browser, no app to install.</p>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img class="prime" src="img/hero-prime-cheer.webp" width="400" height="367" alt="">
+          <img class="witch" src="img/villain-witch-smirk.webp" width="400" height="388" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--card" aria-labelledby="watch">
+      <div class="wrap">
+        <p class="label">The story</p>
+        <h2 id="watch">Watch the banishment</h2>
+        <p class="lede">Every player starts with a title intro and an original cartoon episode, made for this party, that sets up the mystery.</p>
+        <div class="videos">
+          <figure class="video">
+            <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/hVjm272xpbk?rel=0" title="Johnny Prime title intro" loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption>Title intro<small>Meet the demigod of leg curls</small></figcaption>
+          </figure>
+          <figure class="video">
+            <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/1QW2rhjFKAE?rel=0" title="Episode 1: The Banishment" loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption>Episode 1: The Banishment<small>The cult goes live</small></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="built">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="label">What we built</p>
+        <h2 id="built">A whole game, made for one night</h2>
+        <p class="lede">Guests play solo on their own phones, all over the house, and everyone gathers for the summoning ritual at 11:11.</p>
+
+        <div class="features">
+          <article class="feature">
+            <div class="shot shot--phone"><img src="img/join.webp" width="720" height="1558" loading="lazy" alt="The join screen: pick a gamertag and an optional PIN."></div>
+            <h3>Scan and play</h3>
+            <p>Scan a QR code, pick a gamertag and you're in. No app, no account, no email.</p>
+          </article>
+          <article class="feature">
+            <div class="shot shot--phone"><img src="img/home.webp" width="720" height="1558" loading="lazy" alt="Home screen with three zone progress bars: Gym, Outside and Inside, and a countdown under the header."></div>
+            <h3>Light up three zones</h3>
+            <p>27 tasks across the Gym, Outside and Inside: trivia, finds, photo and video challenges, and talk-to-someone-new prompts. Each bar gets more rainbow as you go.</p>
+          </article>
+          <article class="feature">
+            <div class="shot"><img src="img/splash-right.webp" width="720" height="886" loading="lazy" alt="A celebration splash with a Johnny Prime sticker that says YES! Endurance unlocked!"></div>
+            <h3>Big reactions</h3>
+            <p>Custom stickers, confetti and game-show sounds on every solve. Wrong answers get the cult's eye roll.</p>
+          </article>
+          <article class="feature">
+            <div class="shot"><img src="img/levelup.webp" width="720" height="660" loading="lazy" alt="A level-up card: Inside is glowing, hint unlocked."></div>
+            <h3>Yellow lets you guess</h3>
+            <p>Five tasks in a zone unlock a hint. Seven unlock a piece of the logic puzzle. Green lets you know.</p>
+          </article>
+          <article class="feature">
+            <div class="shot"><img src="img/announce.webp" width="720" height="886" loading="lazy" alt="A message from the hosts on a player's phone: Group photo at the fire pit in 5 minutes!"></div>
+            <h3>Hosts on every phone</h3>
+            <p>One tap sends a message to every player's phone, and to the big screen.</p>
+          </article>
+          <article class="feature">
+            <div class="shot"><img src="img/poster.webp" width="700" height="906" loading="lazy" alt="The printable QR poster for the game (QR code blurred here)."></div>
+            <h3>Print-ready posters</h3>
+            <p>QR posters and table cards in the game's style, printed straight from the app.</p>
+          </article>
+        </div>
+
+        <div class="bars">
+          <div class="shot"><img src="img/bar-red.webp" width="780" height="188" loading="lazy" alt="The countdown bar turning red: Seal your recipe! Portal closes in 3:41."></div>
+          <div class="feature">
+            <h3>Beat the clock</h3>
+            <p>A countdown runs all night. In the last five minutes it turns red and shakes, until you seal your ritual recipe. Then it turns rainbow.</p>
+          </div>
+        </div>
+
+        <div class="wide">
+          <div class="shot"><img src="img/tv.webp" width="1600" height="900" loading="lazy" alt="The live TV board: a photo area, the countdown, recipes sealed, zone bars, a top 10 and a ticker of who just lit up a zone."></div>
+          <div class="feature">
+            <h3>A live board on the TV</h3>
+            <p>Party photos slide by next to the countdown, the room's progress in every zone, a top 10 and a ticker of who just lit up a zone. It never shows answers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--card" aria-labelledby="by">
+      <div class="wrap">
+        <p class="label">Built by City Play Co.</p>
+        <h2 id="by">From idea to game night in three weeks</h2>
+        <p class="lede">City Play Co. makes games that turn real places into play. Johnny Prime is a custom build for friends' Halloween party: an original cartoon, a phone game, a live TV board and an in-person finale.</p>
+        <div class="stats">
+          <div class="stat"><b>27</b><span>tasks in 3 zones</span></div>
+          <div class="stat"><b>2</b><span>original videos</span></div>
+          <div class="stat"><b>0</b><span>apps to install</span></div>
+          <div class="stat"><b>11:11</b><span>the summoning</span></div>
+        </div>
+        <div class="photos-soon">
+          <b>Photos from the night are coming soon</b>
+          Follow <a href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">@cityplayco</a> to see how the summoning went.
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="join">
+      <div class="wrap">
+        <img src="img/hero-prime-wink.webp" width="400" height="386" alt="">
+        <h2 id="join"><span class="rainbow">Come help bring him back</span></h2>
+        <p class="lede" style="margin-inline:auto">Halloween night, Saturday, October 31, 6:30 PM to midnight. The summoning is at 11:11 PM.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">DM @cityplayco for the address</a>
+          <a class="btn btn-quiet" href="/">More City Play Co. games</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 City Play Co. · A brand of Community Play Tools, LLC</span>
+      <span><a href="/privacy.html">Privacy</a> · <a href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">@cityplayco</a> · <a href="mailto:ryan@communityplaytools.com">Contact</a></span>
+    </div>
+  </footer>
+</body>
+</html>

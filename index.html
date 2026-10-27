@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Play Detective Downtown | City Play Co.</title>
-  <meta name="description" content="Play detective downtown. A new outdoor walking mystery is planned for Downtown St. Pete's Central Waterfront District in early October.">
+  <meta name="description" content="Play detective downtown. City Play Co. makes live city games in St. Pete. The next St. Pete Detective Club case is coming soon. Follow @cityplayco to hear the date first.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#102c25">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Play Detective Downtown | City Play Co.">
-  <meta property="og:description" content="A new outdoor walking mystery is planned for Downtown St. Pete's Central Waterfront District in early October.">
+  <meta property="og:description" content="Live city games in St. Pete. The next St. Pete Detective Club case is coming soon, and Johnny Prime is our new Halloween party game.">
   <meta property="og:image" content="https://cityplayco.com/assets/social-card.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -17,7 +17,7 @@
   <meta property="og:url" content="https://cityplayco.com/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Play Detective Downtown | City Play Co.">
-  <meta name="twitter:description" content="A new outdoor walking mystery is planned for Downtown St. Pete's Central Waterfront District in early October.">
+  <meta name="twitter:description" content="Live city games in St. Pete. The next St. Pete Detective Club case is coming soon, and Johnny Prime is our new Halloween party game.">
   <meta name="twitter:image" content="https://cityplayco.com/assets/social-card.png">
   <link rel="canonical" href="https://cityplayco.com/">
   <link rel="icon" href="assets/city-play-co-mark.svg" type="image/svg+xml">
@@ -429,6 +429,87 @@
       .hero-grid { padding-top: 14px; }
       .hero-copy { padding-top: 20px; }
     }
+
+    .social-proof {
+      padding: 56px 0 64px;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+    .social-proof-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .social-proof-header .section-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 0 0 10px;
+      color: var(--wine);
+      font: 700 11px/1.2 var(--mono);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .social-proof-header .section-label::before,
+    .social-proof-header .section-label::after {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: var(--line);
+    }
+    .social-proof-header h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 38px);
+      color: var(--forest);
+    }
+    .social-proof-header p {
+      margin: 8px auto 0;
+      max-width: 480px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .instagram-embed-wrap {
+      display: flex;
+      justify-content: center;
+    }
+    .instagram-embed-wrap blockquote.instagram-media {
+      margin: 0 auto !important;
+      width: 100% !important;
+      max-width: 540px !important;
+      min-width: 0 !important;
+    }
+    @media (max-width: 620px) {
+      .social-proof { padding: 44px 0 52px; }
+      .social-proof-header { margin-bottom: 20px; }
+    }
+
+    /* Oct 27: Instagram first, email second; Johnny Prime feature */
+    .now-strip { display: block; padding: 11px 16px; text-align: center; text-decoration: none; color: #fbefd9;
+      background: linear-gradient(90deg, #2a1530, #3a1f43 50%, #2a1530); border-top: 1px solid rgba(211,184,111,.35);
+      font: 700 14px/1.4 var(--mono); letter-spacing: .03em; }
+    .now-strip:hover, .now-strip:focus-visible { background: #3a1f43; }
+    .now-tag { display: inline-block; margin-right: 8px; padding: 2px 8px; color: #1a0d1c; background: #f6c453; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+    .ig-button { gap: 10px; min-width: 260px; }
+    .ig-button svg { width: 20px; height: 20px; flex: none; }
+    .email-alt { margin: 26px 0 10px; color: #cbd2cd; font: 400 14px/1.4 var(--mono); }
+    .hero-signup { margin-top: 0; }
+    .hero-signup .signup { grid-template-columns: 1fr auto; }
+    .email-button { background: transparent; color: var(--gold-light); box-shadow: none; border-color: rgba(211,184,111,.6); }
+    .email-button:hover, .email-button:focus-visible { background: rgba(211,184,111,.12); box-shadow: none; transform: none; }
+    .closing-alt { margin: 18px 0 0 !important; font-size: 16px; }
+    .closing-alt a { color: #f1dfe1; text-underline-offset: 4px; }
+    .johnny { color: #fbefd9; background: radial-gradient(60% 80% at 15% 0%, rgba(164,108,245,.4), transparent 70%), #1a0d1c; border-bottom: 7px solid #0a040b; }
+    .johnny-grid { display: grid; grid-template-columns: 300px 1fr; gap: 48px; align-items: center; padding: 56px 0; }
+    .johnny-art img { width: 100%; transform: rotate(5deg); filter: drop-shadow(0 7px 0 #0a040b); }
+    .johnny-kicker { margin: 0 0 8px; color: #f6c453; font: 700 12px/1.3 var(--mono); letter-spacing: .15em; text-transform: uppercase; }
+    .johnny h2 { margin: 0; font-size: clamp(38px, 5vw, 60px); }
+    .johnny-small { display: block; font-size: .5em; color: #ff8a1f; }
+    .johnny-rainbow { background: linear-gradient(90deg, #ff5a5f, #ff9f1c, #ffd23f, #4ade80, #3fa7ff, #b47cff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .johnny-copy { max-width: 600px; margin: 14px 0 24px; color: #cbb6d8; }
+    .johnny-button { background: #ff8a1f; border-color: #0a040b; box-shadow: 5px 5px 0 #a46cf5; }
+    .johnny-button:hover, .johnny-button:focus-visible { background: #ff9f3f; box-shadow: 3px 3px 0 #a46cf5; }
+    @media (max-width: 820px) { .johnny-grid { grid-template-columns: 1fr; gap: 24px; padding: 44px 0 52px; } .johnny-art { width: min(220px, 60vw); } }
+    @media (max-width: 620px) { .ig-button, .johnny-button { width: 100%; min-width: 0; } .hero-signup .signup { grid-template-columns: 1fr; } .now-strip { font-size: 13px; } }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       *, *::before, *::after { transition-duration: .01ms !important; }
@@ -441,18 +522,21 @@
 
   <header class="wrap masthead">
     <img class="wordmark" src="assets/city-play-co-wordmark.svg" width="1000" height="240" alt="City Play Co. — Game night in your city">
-    <a class="button header-cta js-join" data-placement="header" href="#join">Join the waitlist</a>
+    <a class="button header-cta js-instagram" data-placement="header" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">Follow @cityplayco</a>
   </header>
 
   <main id="main-content">
+    <a class="now-strip" href="/johnny_halloween/"><span class="now-tag">New</span> The Banishment of Johnny Prime, our Halloween party game <span aria-hidden="true">→</span></a>
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">St. Pete Detective Club</p>
           <h1>Play detective downtown.</h1>
           <p class="dek">Follow clues and uncover a mystery on foot through Downtown St. Pete’s Central Waterfront District.</p>
-          <p class="micro">Planned for early October · Downtown St. Pete</p>
-          <p class="waitlist-promise">Get the date, launch details, and an invitation to book when registration opens.</p>
+          <p class="micro">Next case: date coming soon · Downtown St. Pete</p>
+          <p class="waitlist-promise">Follow us on Instagram to hear the date first, with clues and sneak peeks along the way.</p>
+          <div class="hero-actions"><a class="button ig-button js-instagram" data-placement="hero" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>Follow @cityplayco</a></div>
+          <p class="email-alt">Prefer email? Get the date when tickets open.</p>
         <div id="join" class="hero-signup">
         <div id="mlb2-43858234" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-43858234">
           <div class="row-form">
@@ -461,19 +545,18 @@
               <input id="signup-email" name="fields[email]" type="email" autocomplete="email" placeholder="you@example.com" required>
               <input type="hidden" name="ml-submit" value="1">
               <input type="hidden" name="anticsrf" value="true">
-              <button class="button primary" type="submit">Join the waitlist</button>
+              <button class="button primary email-button" type="submit">Email me the date</button>
               <button class="button loading" type="button" disabled aria-label="Joining the list"><span class="ml-form-embedSubmitLoad" aria-hidden="true"></span></button>
             </form>
             <p class="signup-note">By joining, you agree to receive City Play Co. emails. Unsubscribe anytime. <a href="privacy.html">Privacy details</a>.</p>
           </div>
           <div class="row-success join-success" style="display: none" role="status" aria-live="polite">
             <h2>One more step: confirm your email.</h2>
-            <p>Check your inbox for an email from City Play Co. and click the confirmation link to finish joining the waitlist. Don’t see it? Check spam or Promotions.</p>
+            <p>Check your inbox for an email from City Play Co. and click the confirmation link to finish joining the list. Don’t see it? Check spam or Promotions.</p>
             <p class="instagram-link"><a class="js-instagram" data-placement="signup_success" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">Follow @cityplayco for sneak peeks and clues →</a></p>
           </div>
         </div>
         </div>
-          <p class="instagram-link signup-instagram"><a class="js-instagram" data-placement="hero" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">Follow @cityplayco for sneak peeks and clues →</a></p>
         </div>
 
         <figure class="teaser-video">
@@ -488,6 +571,18 @@
           </div>
           <figcaption>New case · Teaser</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="johnny" aria-labelledby="johnny-title">
+      <div class="wrap johnny-grid">
+        <a class="johnny-art" href="/johnny_halloween/" tabindex="-1" aria-hidden="true"><img src="johnny_halloween/img/hero-prime-cheer.webp" width="400" height="367" alt="" loading="lazy"></a>
+        <div>
+          <p class="johnny-kicker">Halloween night · Sat, Oct 31</p>
+          <h2 id="johnny-title"><span class="johnny-small">The Banishment of</span> <span class="johnny-rainbow">Johnny Prime</span></h2>
+          <p class="johnny-copy">Our new Halloween party game: an original cartoon, a phone game played all over the house, a live TV board and a summoning at 11:11 PM.</p>
+          <a class="button johnny-button" href="/johnny_halloween/">See the game</a>
+        </div>
       </div>
     </section>
 
@@ -506,7 +601,20 @@
         <div class="confidence-item">
           <span class="confidence-number">03</span>
           <strong>Be first to hear</strong>
-          <span>Join the waitlist for the date and registration announcement.</span>
+          <span>Follow @cityplayco for the date, clues and sneak peeks.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-proof" aria-label="From the first game">
+      <div class="wrap">
+        <div class="social-proof-header">
+          <p class="section-label">From the First Game</p>
+          <h2>Mystery in action.</h2>
+          <p>See what players experienced during our debut mystery walk through Downtown St. Pete.</p>
+        </div>
+        <div class="instagram-embed-wrap">
+          <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/Dbe_CSUvw7O/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/Dbe_CSUvw7O/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/Dbe_CSUvw7O/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by City Play Co - St. Pete. (@cityplayco)</a></p></div></blockquote>
         </div>
       </div>
     </section>
@@ -514,8 +622,9 @@
     <section class="closing">
       <div class="wrap">
         <h2>Your next mystery starts here.</h2>
-        <p>Join the waitlist for launch details and an invitation to book when registration opens.</p>
-        <a class="button js-join" data-placement="closing" href="#join">Join the waitlist</a>
+        <p>Follow @cityplayco to hear about the next case first.</p>
+        <a class="button js-instagram" data-placement="closing" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">Follow @cityplayco</a>
+        <p class="closing-alt"><a class="js-join" data-placement="closing" href="#join">Or get the date by email</a></p>
       </div>
     </section>
 
@@ -526,6 +635,7 @@
     <div class="wrap footer-inner">
       <span>© 2026 City Play Co. · A brand of Community Play Tools, LLC</span>
       <div class="footer-links">
+        <a href="/johnny_halloween/">Johnny Prime</a>
         <a href="privacy.html">Privacy</a>
         <a class="js-instagram" data-placement="footer" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">@cityplayco</a>
         <a href="mailto:ryan@communityplaytools.com">Contact</a>
@@ -534,7 +644,7 @@
   </footer>
 
   <div class="mobile-cta">
-    <a class="button js-join" data-placement="mobile" href="#join">Join the waitlist</a>
+    <a class="button js-instagram" data-placement="mobile" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">Follow @cityplayco</a>
   </div>
 
   <script>
@@ -543,7 +653,7 @@
       if (!container) return;
       container.querySelector(".row-form").style.display = "none";
       container.querySelector(".row-success").style.display = "block";
-      document.querySelector(".signup-instagram").hidden = true;
+      document.querySelector(".email-alt")?.setAttribute("hidden", "");
       track("cityplayco_mailing_list_success", "hero");
     }
   </script>
@@ -607,8 +717,9 @@
     const signupObserver = new IntersectionObserver(([entry]) => {
       document.querySelector(".mobile-cta").classList.toggle("is-hidden", entry.isIntersecting);
     });
-    signupObserver.observe(document.querySelector("#join"));
+    signupObserver.observe(document.querySelector(".hero"));
     track("cityplayco_page_view");
   </script>
+  <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>

@@ -1,12 +1,20 @@
 # City Play Co.
 
-Static waitlist site for St. Pete Detective Club, planned for early October in Downtown St. Pete. Date, venue, ticketing, and group arrangements are not finalized.
+Static site for City Play Co. The home page features the next St. Pete Detective Club case (date not announced yet) and links to the Johnny Prime Halloween promo page at `/johnny_halloween/`.
 
 ## Preview
 
 From the parent workspace: `python -m http.server 8000 --directory cityplayco`, then open http://localhost:8000. Use HTTP rather than file URLs so the YouTube embed receives a referrer.
 
-## Waitlist
+## Sign-up (updated Oct 27, 2026)
+
+Following @cityplayco on Instagram is the main call to action (header, hero, closing, mobile bar). The MailerLite form stays in the hero as the email option ("Email me the date").
+
+## Johnny Prime promo page
+
+`johnny_halloween/index.html` celebrates The Banishment of Johnny Prime, City Play Co.'s Halloween party game (Oct 31, 2026, 6:30 PM to midnight, finale 11:11 PM, at the Home of Get Psyched, address by Instagram DM). It deliberately has no link or scannable QR code to the game itself (the poster screenshot is blurred). Screenshots are from test data and show no task prompts, answers, hints or recipe choices. It embeds the trailer (`hVjm272xpbk`) and the mini episode (`1QW2rhjFKAE`); swap the episode ID when the final cut is uploaded. Add event photos to the "Photos from the night" block after the party. The page sends no analytics: the analytics table only accepts the home page's event and placement values, so tracking it would need a migration in the case app's Supabase project.
+
+## Waitlist (email)
 
 The single MailerLite form sits in the hero. All waitlist links lead to it. Instagram appears beneath signup, in the success message, and in the footer. The mobile sticky button hides while signup is visible.
 
