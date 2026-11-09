@@ -8,6 +8,6 @@ User-agent: PerplexityBot
 Allow: /
 
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 Sitemap: https://cityplayco.com/sitemap.xml
