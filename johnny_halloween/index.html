@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Banishment of Johnny Prime | City Play Co.</title>
-  <meta name="description" content="A one-night Halloween party game built by City Play Co. Saturday, October 31, 2026, 6:30 PM to midnight, with the game finale at 11:11 PM.">
+  <title>The Banishment of Johnny Prime: a Custom Party Game | City Play Co.</title>
+  <meta name="description" content="A custom in-person party game by City Play Co.: phone scavenger hunt, original cartoon and live leaderboard. Built for corporate events and private parties.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#1a0d1c">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="The Banishment of Johnny Prime | City Play Co.">
-  <meta property="og:description" content="A one-night Halloween party game built by City Play Co. Saturday, Oct 31, 6:30 PM to midnight. Game finale at 11:11 PM.">
+  <meta property="og:title" content="The Banishment of Johnny Prime: a Custom Party Game | City Play Co.">
+  <meta property="og:description" content="A custom in-person party game by City Play Co.: phone scavenger hunt, original cartoon and live leaderboard. Built for corporate events and private parties.">
   <meta property="og:image" content="https://cityplayco.com/johnny_halloween/img/social-card.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="The Banishment of Johnny Prime, a Halloween party game by City Play Co.">
   <meta property="og:url" content="https://cityplayco.com/johnny_halloween/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Banishment of Johnny Prime | City Play Co.">
-  <meta name="twitter:description" content="A one-night Halloween party game built by City Play Co. Saturday, Oct 31, 6:30 PM to midnight. Game finale at 11:11 PM.">
+  <meta name="twitter:title" content="The Banishment of Johnny Prime: a Custom Party Game | City Play Co.">
+  <meta name="twitter:description" content="A custom in-person party game by City Play Co.: phone scavenger hunt, original cartoon and live leaderboard. Built for corporate events and private parties.">
   <meta name="twitter:image" content="https://cityplayco.com/johnny_halloween/img/social-card.jpg">
   <link rel="canonical" href="https://cityplayco.com/johnny_halloween/">
   <link rel="icon" href="/assets/city-play-co-mark.svg" type="image/svg+xml">
@@ -28,17 +28,233 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "The Banishment of Johnny Prime: a Halloween party game",
-    "description": "A one-night Halloween party game built by City Play Co., played on your phone, with a summoning finale at 11:11 PM.",
-    "startDate": "2026-10-31T18:30:00-04:00",
-    "endDate": "2026-11-01T00:00:00-04:00",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "location": { "@type": "Place", "name": "The Home of Get Psyched", "address": { "@type": "PostalAddress", "addressLocality": "St. Petersburg", "addressRegion": "FL", "addressCountry": "US" } },
-    "image": ["https://cityplayco.com/johnny_halloween/img/social-card.jpg"],
-    "organizer": { "@type": "Organization", "name": "City Play Co.", "url": "https://cityplayco.com/" },
-    "url": "https://cityplayco.com/johnny_halloween/"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://cityplayco.com/#organization",
+        "name": "City Play Co.",
+        "legalName": "Community Play Tools, LLC",
+        "url": "https://cityplayco.com/",
+        "logo": "https://cityplayco.com/assets/city-play-co-profile.png",
+        "email": "ryan@communityplaytools.com",
+        "sameAs": [
+          "https://www.instagram.com/cityplayco/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "St. Petersburg",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://cityplayco.com/#ryan-stock"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://cityplayco.com/#ryan-stock",
+        "name": "Ryan Stock",
+        "jobTitle": "Founder",
+        "worksFor": {
+          "@id": "https://cityplayco.com/#organization"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/ryan-stock-bb955555/"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://cityplayco.com/johnny_halloween/#webpage",
+        "url": "https://cityplayco.com/johnny_halloween/",
+        "name": "The Banishment of Johnny Prime: a custom in-person party game by City Play Co.",
+        "datePublished": "2026-10-27",
+        "dateModified": "2026-11-09",
+        "inLanguage": "en-US",
+        "author": {
+          "@id": "https://cityplayco.com/#ryan-stock"
+        },
+        "publisher": {
+          "@id": "https://cityplayco.com/#organization"
+        },
+        "about": {
+          "@id": "https://cityplayco.com/johnny_halloween/#event"
+        },
+        "primaryImageOfPage": "https://cityplayco.com/johnny_halloween/img/social-card.jpg"
+      },
+      {
+        "@type": "Event",
+        "@id": "https://cityplayco.com/johnny_halloween/#event",
+        "name": "The Banishment of Johnny Prime: a Halloween party game",
+        "description": "A custom, in-person Halloween party game built by City Play Co.: a phone scavenger hunt and mystery with 27 tasks in three zones, a live TV leaderboard, original videos and a group summoning finale.",
+        "startDate": "2026-10-31T18:30:00-04:00",
+        "endDate": "2026-11-01T00:00:00-04:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "The Home of Get Psyched",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "St. Petersburg",
+            "addressRegion": "FL",
+            "addressCountry": "US"
+          }
+        },
+        "image": [
+          "https://cityplayco.com/johnny_halloween/img/social-card.jpg"
+        ],
+        "organizer": {
+          "@id": "https://cityplayco.com/#organization"
+        },
+        "url": "https://cityplayco.com/johnny_halloween/"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://cityplayco.com/johnny_halloween/#service",
+        "name": "Custom in-person party games",
+        "serviceType": "Custom interactive in-person game design for corporate events and private parties",
+        "description": "Bespoke phone-based party games for corporate team events and private celebrations: custom story, tasks about your people and venue, original video and music, a live leaderboard and a group finale. Handles up to 100 players; best for groups of 20 to 60.",
+        "provider": {
+          "@id": "https://cityplayco.com/#organization"
+        },
+        "audience": [
+          {
+            "@type": "BusinessAudience",
+            "audienceType": "Corporate teams and event planners"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "Private party hosts"
+          }
+        ]
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://cityplayco.com/johnny_halloween/#video-QbWGjuFs0nE",
+        "name": "Johnny Prime title intro",
+        "description": "The animated title intro for The Banishment of Johnny Prime, a custom in-person Halloween party game by City Play Co.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/QbWGjuFs0nE/hqdefault.jpg",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/QbWGjuFs0nE",
+        "contentUrl": "https://www.youtube.com/shorts/QbWGjuFs0nE",
+        "publisher": {
+          "@id": "https://cityplayco.com/#organization"
+        },
+        "uploadDate": "2026-11-09",
+        "duration": "PT49S"
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://cityplayco.com/johnny_halloween/#video-8pgK5O2B6Wk",
+        "name": "Episode 1: The Banishment",
+        "description": "A short original cartoon episode that sets up the mystery for The Banishment of Johnny Prime, a custom party game by City Play Co.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/8pgK5O2B6Wk/hqdefault.jpg",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/8pgK5O2B6Wk",
+        "contentUrl": "https://www.youtube.com/shorts/8pgK5O2B6Wk",
+        "publisher": {
+          "@id": "https://cityplayco.com/#organization"
+        },
+        "uploadDate": "2026-11-09",
+        "duration": "PT2M52S"
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://cityplayco.com/johnny_halloween/#video-Yq_zAhk7ils",
+        "name": "Johnny Prime credits",
+        "description": "The credits for The Banishment of Johnny Prime, a custom in-person party game City Play Co. built for a Halloween party in St. Petersburg, Florida.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/Yq_zAhk7ils/hqdefault.jpg",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/Yq_zAhk7ils",
+        "contentUrl": "https://www.youtube.com/shorts/Yq_zAhk7ils",
+        "publisher": {
+          "@id": "https://cityplayco.com/#organization"
+        },
+        "uploadDate": "2026-11-09",
+        "duration": "PT1M48S"
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://cityplayco.com/johnny_halloween/#video-U851Ah8EasM",
+        "name": "We Turned a Halloween Party Into a Phone Scavenger Hunt",
+        "description": "Highlight reel from the night: real guests playing The Banishment of Johnny Prime, a custom in-person party game City Play Co. built for a Halloween party in St. Petersburg, Florida.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/U851Ah8EasM/hqdefault.jpg",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/U851Ah8EasM",
+        "contentUrl": "https://www.youtube.com/shorts/U851Ah8EasM",
+        "uploadDate": "2026-11-09",
+        "duration": "PT53S",
+        "publisher": {
+          "@id": "https://cityplayco.com/#organization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://cityplayco.com/johnny_halloween/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is The Banishment of Johnny Prime?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is a custom, in-person party game City Play Co. built for a private Halloween party in St. Petersburg, Florida, on October 31, 2026. Guests played on their own phones: a scavenger hunt and mystery with 27 tasks across three zones of the house, a live leaderboard on the TV, an original cartoon and theme song, and a group summoning ritual as the finale."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can City Play Co. build a game like this for my company or event?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. City Play Co. designs bespoke in-person games for corporate team events, offsites, holiday parties and conference socials, and for private celebrations like milestone birthdays and bachelor or bachelorette parties. Each game is built around your people, your venue and your story."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many players can it handle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "These games can handle up to 100 players. They work best for groups of 20 to 60, where people can meet each other across the room and still feel the energy of the whole group."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do guests need to download an app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Players scan a QR code, pick a gamertag and play in their phone's web browser. There is no app, account or email sign-up."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is included in a custom game?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A custom story and characters, tasks and clues written about your group and venue, original intro video and music, a phone game with points, stickers and sounds, a live leaderboard for a TV or projector, a host control panel for announcements and timing, print-ready QR posters, and a finale that brings everyone together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to build a custom game?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Johnny Prime game went from idea to game night in about three weeks. Timing depends on the size of the event and how much custom media you want, so reach out early to plan your date."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can people play in teams?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Johnny Prime was played solo on each guest's phone, and many guests teamed up and played together on one phone. For team events, the game can be set up around your groups."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is City Play Co. based?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "City Play Co. is based in St. Petersburg, Florida, and is a brand of Community Play Tools, LLC. To talk about a game for your event, email ryan@communityplaytools.com or message @cityplayco on Instagram."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
   <style>
@@ -110,7 +326,7 @@
     .lede { margin: 12px 0 0; max-width: 680px; color: var(--muted); font-size: 19px; }
 
     /* Videos */
-    .videos { display: grid; grid-template-columns: repeat(2, minmax(0, 300px)); gap: 28px; justify-content: center; margin-top: 30px; }
+    .videos { display: grid; grid-template-columns: repeat(3, minmax(0, 300px)); gap: 28px; justify-content: center; margin-top: 30px; }
     .video figcaption { margin-top: 12px; text-align: center; font: 400 20px/1.2 var(--display); }
     .video small { display: block; margin-top: 2px; font: 400 14px/1.4 var(--body); color: var(--muted); }
     .frame { position: relative; aspect-ratio: 9 / 16; border-radius: 22px; overflow: hidden; background: var(--sunken);
@@ -147,12 +363,42 @@
     footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; }
     footer a { color: var(--gold); }
 
+    /* Summary + byline */
+    .summary { margin: 18px 0 0; max-width: 580px; font-size: clamp(18px, 1.9vw, 20px); color: var(--text); }
+    .summary strong { color: var(--gold); font-weight: 700; }
+    .byline { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
+    .quote { margin: 30px auto 0; max-width: 720px; padding: 22px 26px; border-left: 6px solid var(--gold); background: var(--raised); border-radius: 0 18px 18px 0; }
+    .quote p { margin: 0; font: 400 clamp(22px, 2.6vw, 28px)/1.25 var(--display); }
+    .quote cite { display: block; margin-top: 8px; font: 400 14px/1.4 var(--body); color: var(--muted); font-style: normal; }
+
+    /* Bring it to your team */
+    .offers { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 30px; }
+    .offer { padding: 24px; border-radius: 24px; background: var(--card); border: 4px solid var(--ink); box-shadow: 0 7px 0 var(--ink); }
+    .offer h3 { margin: 0 0 8px; font: 400 26px/1.1 var(--display); }
+    .offer p { margin: 0; color: var(--muted); }
+    .includes { margin: 30px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 28px; }
+    .includes li { position: relative; padding-left: 30px; }
+    .includes li::before { content: "★"; position: absolute; left: 0; color: var(--gold); }
+    .sizing { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 12px; }
+    .sizing span { padding: 8px 16px; border-radius: 999px; background: var(--gold); color: var(--ink); font: 700 15px/1.3 var(--body); }
+
+    /* FAQ */
+    .faq { margin-top: 26px; display: grid; gap: 12px; max-width: 820px; }
+    .faq details { border-radius: 18px; background: var(--raised); border: 3px solid var(--ink); box-shadow: 0 4px 0 var(--ink); }
+    .faq summary { cursor: pointer; padding: 16px 20px; font: 400 21px/1.25 var(--display); list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; float: right; color: var(--gold); }
+    .faq details[open] summary::after { content: "–"; }
+    .faq details p { margin: 0; padding: 0 20px 18px; color: var(--muted); }
+
     @media (max-width: 900px) {
+      .offers, .includes { grid-template-columns: 1fr; }
       .hero-grid { grid-template-columns: 1fr; }
       .hero-art { order: -1; width: min(300px, 70vw); margin-bottom: 4px; }
       .features { grid-template-columns: repeat(2, 1fr); }
       .wide, .bars { grid-template-columns: 1fr; }
       .stats { grid-template-columns: repeat(2, 1fr); }
+      .videos { grid-template-columns: repeat(2, minmax(0, 300px)); }
     }
     @media (max-width: 560px) {
       body { font-size: 17px; }
@@ -183,10 +429,12 @@
         <div>
           <p class="kicker">The Banishment of</p>
           <h1><span class="rainbow">Johnny Prime</span></h1>
-          <p class="dek">A one-night Halloween party game, built by City Play Co. The Whytry Cult banished Johnny Prime into the Cheddar Void. Grab your phone, light up the rainbow and help bring him back.</p>
+          <p class="summary"><strong>A custom, in-person party game by City Play Co.</strong> We built The Banishment of Johnny Prime for a private Halloween party in St. Pete: a phone scavenger hunt and mystery with 27 tasks across the house, a live leaderboard on the TV, an original cartoon and a group finale. No app needed. We build games like this for corporate events and private parties.</p>
+          <p class="dek">The story: the Whytry Cult banished Johnny Prime into the Cheddar Void. On Halloween night, the party grabbed their phones, lit up the rainbow and brought him back.</p>
+          <p class="byline">Case study by Ryan Stock, founder of City Play Co. · Updated <time datetime="2026-11-09">November 9, 2026</time></p>
 
           <div class="event" aria-label="Event details">
-            <span class="tag">Come join us</span>
+            <span class="tag">The summoning worked</span>
             <dl>
               <dt>When</dt><dd>Halloween, Saturday, October 31, 2026</dd>
               <dt>Time</dt><dd>6:30 PM to midnight</dd>
@@ -194,12 +442,13 @@
               <dt>Where</dt><dd>The Home of Get Psyched, St. Pete</dd>
             </dl>
             <div class="actions">
-              <a class="btn btn-primary" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">
+              <a class="btn btn-primary" href="#bring">Plan one for your team</a>
+              <a class="btn btn-quiet" href="#watch">Watch the videos</a>
+              <a class="btn btn-quiet" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
-                DM @cityplayco for the address
+                @cityplayco
               </a>
             </div>
-            <p class="fine">Bring a charged phone. The game runs in your browser, no app to install.</p>
           </div>
         </div>
         <div class="hero-art" aria-hidden="true">
@@ -213,17 +462,22 @@
       <div class="wrap">
         <p class="label">The story</p>
         <h2 id="watch">Watch the banishment</h2>
-        <p class="lede">Every player starts with a title intro and an original cartoon episode, made for this party, that sets up the mystery.</p>
+        <p class="lede">Every player started with a title intro and an original cartoon episode, made for this party, that set up the mystery. The credits roll for everyone who helped bring Johnny back.</p>
         <div class="videos">
           <figure class="video">
-            <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/hVjm272xpbk?rel=0" title="Johnny Prime title intro" loading="lazy"
+            <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/QbWGjuFs0nE?rel=0" title="Johnny Prime title intro" loading="lazy"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             <figcaption>Title intro<small>Meet the demigod of leg curls</small></figcaption>
           </figure>
           <figure class="video">
-            <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/1QW2rhjFKAE?rel=0" title="Episode 1: The Banishment" loading="lazy"
+            <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/8pgK5O2B6Wk?rel=0" title="Episode 1: The Banishment" loading="lazy"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             <figcaption>Episode 1: The Banishment<small>The cult goes live</small></figcaption>
+          </figure>
+          <figure class="video">
+            <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/Yq_zAhk7ils?rel=0" title="Johnny Prime credits" loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption>The credits<small>Everyone who brought him back</small></figcaption>
           </figure>
         </div>
       </div>
@@ -234,7 +488,7 @@
       <div class="wrap">
         <p class="label">What we built</p>
         <h2 id="built">A whole game, made for one night</h2>
-        <p class="lede">Guests play solo on their own phones, all over the house, and everyone gathers for the summoning ritual at 11:11.</p>
+        <p class="lede">Guests played solo on their own phones, all over the house, and everyone gathered for the summoning ritual at 11:11.</p>
 
         <div class="features">
           <article class="feature">
@@ -291,16 +545,99 @@
       <div class="wrap">
         <p class="label">Built by City Play Co.</p>
         <h2 id="by">From idea to game night in three weeks</h2>
-        <p class="lede">City Play Co. makes games that turn real places into play. Johnny Prime is a custom build for friends' Halloween party: an original cartoon, a phone game, a live TV board and an in-person finale.</p>
+        <p class="lede">City Play Co. makes games that turn real places into play. Johnny Prime was a custom build for a Halloween party: an original cartoon and theme song, a phone game, a live TV board, a host control panel and an in-person finale, all designed around the hosts and their friends.</p>
         <div class="stats">
           <div class="stat"><b>27</b><span>tasks in 3 zones</span></div>
-          <div class="stat"><b>2</b><span>original videos</span></div>
+          <div class="stat"><b>3</b><span>original videos</span></div>
           <div class="stat"><b>0</b><span>apps to install</span></div>
-          <div class="stat"><b>11:11</b><span>the summoning</span></div>
+          <div class="stat"><b>100</b><span>players it can handle</span></div>
         </div>
-        <div class="photos-soon">
-          <b>Photos from the night are coming soon</b>
-          Follow <a href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">@cityplayco</a> to see how the summoning went.
+        <blockquote class="quote">
+          <p>"Introductions to others you might not otherwise meet. Instant ice breaker."</p>
+          <cite>A player, in the end-of-game survey</cite>
+        </blockquote>
+        <div class="videos" style="grid-template-columns: minmax(0, 300px); margin-top: 34px;">
+          <figure class="video">
+            <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/U851Ah8EasM?rel=0" title="Johnny Prime highlight reel: the night" loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <figcaption>The night<small>Real players, real summoning</small></figcaption>
+          </figure>
+        </div>
+        <p class="fine" style="text-align:center">More from the night on <a href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">@cityplayco</a>.</p>
+      </div>
+    </section>
+
+    <section class="band" id="bring" aria-labelledby="bring-title">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="label">Bring it to your team</p>
+        <h2 id="bring-title">A custom game for your event</h2>
+        <p class="lede">Johnny Prime started as one party. The same build works for your people: a story, tasks and inside jokes written about your group, played all over your venue, with a finale everyone shows up for.</p>
+        <div class="offers">
+          <article class="offer">
+            <h3>Corporate events</h3>
+            <p>Team offsites, holiday parties, onboarding weeks and conference socials. Get people out of their usual circles and talking to colleagues they don't normally meet.</p>
+          </article>
+          <article class="offer">
+            <h3>Bespoke private parties</h3>
+            <p>Milestone birthdays, bachelor and bachelorette weekends, and themed parties. A one-of-a-kind game starring the guest of honor.</p>
+          </article>
+        </div>
+        <ul class="includes">
+          <li>A custom story and characters</li>
+          <li>Tasks and clues about your people and venue</li>
+          <li>Original intro video and music</li>
+          <li>A phone game with points, stickers and sounds</li>
+          <li>A live leaderboard for your TV or projector</li>
+          <li>Host controls for announcements and timing</li>
+          <li>Print-ready QR posters and table cards</li>
+          <li>A finale that brings everyone together</li>
+        </ul>
+        <div class="sizing"><span>Up to 100 players</span><span>Best for groups of 20 to 60</span><span>No app to install</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:ryan@communityplaytools.com?subject=Custom%20game%20for%20our%20event">Email us about your event</a>
+          <a class="btn btn-quiet" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">Message @cityplayco</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--card" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <p class="label">Questions</p>
+        <h2 id="faq-title">Custom party games, answered</h2>
+        <div class="faq">
+          <details>
+            <summary>What is The Banishment of Johnny Prime?</summary>
+            <p>It is a custom, in-person party game City Play Co. built for a private Halloween party in St. Petersburg, Florida, on October 31, 2026. Guests played on their own phones: a scavenger hunt and mystery with 27 tasks across three zones of the house, a live leaderboard on the TV, an original cartoon and theme song, and a group summoning ritual as the finale.</p>
+          </details>
+          <details>
+            <summary>Can City Play Co. build a game like this for my company or event?</summary>
+            <p>Yes. City Play Co. designs bespoke in-person games for corporate team events, offsites, holiday parties and conference socials, and for private celebrations like milestone birthdays and bachelor or bachelorette parties. Each game is built around your people, your venue and your story.</p>
+          </details>
+          <details>
+            <summary>How many players can it handle?</summary>
+            <p>These games can handle up to 100 players. They work best for groups of 20 to 60, where people can meet each other across the room and still feel the energy of the whole group.</p>
+          </details>
+          <details>
+            <summary>Do guests need to download an app?</summary>
+            <p>No. Players scan a QR code, pick a gamertag and play in their phone&#x27;s web browser. There is no app, account or email sign-up.</p>
+          </details>
+          <details>
+            <summary>What is included in a custom game?</summary>
+            <p>A custom story and characters, tasks and clues written about your group and venue, original intro video and music, a phone game with points, stickers and sounds, a live leaderboard for a TV or projector, a host control panel for announcements and timing, print-ready QR posters, and a finale that brings everyone together.</p>
+          </details>
+          <details>
+            <summary>How long does it take to build a custom game?</summary>
+            <p>The Johnny Prime game went from idea to game night in about three weeks. Timing depends on the size of the event and how much custom media you want, so reach out early to plan your date.</p>
+          </details>
+          <details>
+            <summary>Can people play in teams?</summary>
+            <p>Johnny Prime was played solo on each guest&#x27;s phone, and many guests teamed up and played together on one phone. For team events, the game can be set up around your groups.</p>
+          </details>
+          <details>
+            <summary>Where is City Play Co. based?</summary>
+            <p>City Play Co. is based in St. Petersburg, Florida, and is a brand of Community Play Tools, LLC. To talk about a game for your event, email ryan@communityplaytools.com or message @cityplayco on Instagram.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -308,10 +645,10 @@
     <section class="closing" aria-labelledby="join">
       <div class="wrap">
         <img src="img/hero-prime-wink.webp" width="400" height="386" alt="">
-        <h2 id="join"><span class="rainbow">Come help bring him back</span></h2>
-        <p class="lede" style="margin-inline:auto">Halloween night, Saturday, October 31, 6:30 PM to midnight. The summoning is at 11:11 PM.</p>
+        <h2 id="join"><span class="rainbow">Johnny Prime is back</span></h2>
+        <p class="lede" style="margin-inline:auto">Halloween night, Saturday, October 31, 2026. The party went outside for the summoning and Johnny Prime came back. Want a game like this for your team or your next big party? Let's talk.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">DM @cityplayco for the address</a>
+          <a class="btn btn-primary" href="mailto:ryan@communityplaytools.com?subject=Custom%20game%20for%20our%20event">Email us about your event</a>
           <a class="btn btn-quiet" href="/">More City Play Co. games</a>
         </div>
       </div>
