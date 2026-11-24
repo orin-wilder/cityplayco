@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | City Play Co.</title>
+  <meta name="description" content="Tell City Play Co. about your offsite, party or event. Share your date, headcount and venue, and Ryan will recommend a custom game.">
+  <link rel="canonical" href="https://cityplayco.com/contact/">
+  <meta name="theme-color" content="#102c25">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | City Play Co.">
+  <meta property="og:description" content="Planning an offsite or event? Tell me about it and I'll recommend a custom game.">
+  <meta property="og:url" content="https://cityplayco.com/contact/">
+  <meta property="og:image" content="https://cityplayco.com/assets/social-card.png">
+  <link rel="icon" href="/assets/city-play-co-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/city-play-co-profile.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Playfair+Display:wght@600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/pages.css?v=20261124">
+</head>
+<body>
+  <div class="band"><header class="wrap topbar">
+    <a href="/"><img src="/assets/city-play-co-wordmark.svg" width="1000" height="240" alt="City Play Co. home"></a>
+    <a class="back" href="/">← Home</a>
+  </header></div>
+
+  <main class="wrap" id="main-content">
+    <section class="panel">
+      <p class="eyebrow">Get in touch</p>
+      <h1>Tell me about your event.</h1>
+      <p class="lede">Planning an offsite, a party or a team event? Share what you know so far. A date, a rough headcount and the venue are plenty to start. I’ll reply within two business days with a format idea.</p>
+
+      <form name="contact" method="POST" action="/contact/thanks/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="subject" value="City Play Co. inquiry from cityplayco.com">
+        <p class="hidden-field" aria-hidden="true"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+        <div class="form-grid">
+          <div class="field"><label for="name">Name *</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="org">Company or group</label><input id="org" name="organization" type="text" autocomplete="organization"></div>
+          <div class="field">
+            <label for="type">What’s the occasion?</label>
+            <select id="type" name="event-type">
+              <option value="Team offsite or company event">Team offsite or company event</option>
+              <option value="Private party">Private party</option>
+              <option value="Conference or festival">Conference or festival</option>
+              <option value="Public game / tickets">Public game or tickets</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+          <div class="field"><label for="date">Date (if known)</label><input id="date" name="event-date" type="text" placeholder="e.g. March 12, or spring 2027"></div>
+          <div class="field"><label for="headcount">Headcount</label><input id="headcount" name="headcount" type="text" inputmode="numeric" placeholder="e.g. 40"></div>
+          <div class="field full"><label for="venue">Venue or area</label><input id="venue" name="venue" type="text" placeholder="e.g. downtown St. Pete, our office, a hotel"></div>
+          <div class="field full"><label for="message">Anything else? *</label><textarea id="message" name="message" required placeholder="Who’s coming, what you want people to feel or do, how much time you have for the activity."></textarea></div>
+          <div class="field full"><button class="button" type="submit">Send <span aria-hidden="true">→</span></button></div>
+        </div>
+        <p class="form-note">Your note goes straight to Ryan. We only use it to reply. <a href="/privacy.html">Privacy details</a>.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="foot">© 2026 City Play Co. · A brand of Community Play Tools, LLC · <a href="https://www.instagram.com/cityplayco/" target="_blank" rel="noopener">@cityplayco</a></footer>
+</body>
+</html>
